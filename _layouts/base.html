@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的博客 </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="{{site.baseurl}}/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/vendor/leaflet/leaflet.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
+    <link rel="shortcut icon" href="{{site.baseurl}}/img/favicon.png">
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-lg-0">
+        <div class="container"><a href="post.html" class="navbar-brand text-uppercase font-weight-bold">有点东西</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">菜单</span><i class="fas fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a href="post.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 active">首页 </a>
+              </li>
+              <li class="nav-item"><a href="post.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">内容页面 </a>
+              </li>
+              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="post.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">列表</a>
+                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0"><a href="#" class="dropdown-item small text-uppercase">项目 1</a><a href="#" class="dropdown-item small text-uppercase">项目 2</a><a href="#" class="dropdown-item small text-uppercase">项目 3</a><a href="#" class="dropdown-item small text-uppercase">项目 4</a></div>
+              </li>
+              <li class="nav-item"><a href="post.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">联系 </a>
+              </li>
+              <li class="nav-item mt-4 mt-lg-0">
+                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-outline-primary nav-btn btn-sm"> <i class="fas fa-sign-out-alt mr-2"></i>注册 </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+{{content}}
+
+    <footer style="background: #eee;" class="pt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">关于</h5>
+            <p class="text-muted text-small">虽然还有各种问题需要解决，但大型平台已充分意识到这种新闻形式的力量，并通过创新来测试其影响度。也许未来有一天，空间新闻把你带到战场上，战争就不再遥远了——你的整个视野和感觉都会被一种与现实中类似的恐惧所笼罩。你也可以用当地的媒体产品来精确地了解天气状况，但与大多数技术一样，这可能会带来好的一面，也可能带来坏的一面。毫无疑问，未来空间新闻构建的以空间为中心的体验，能更好地服务人们的记忆和同理心，新闻也因此更有影响力。</p>
+            <p class="text-muted text-small"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">My offices</h5>
+            <h6>china</h6>
+            <p class="text-muted mb-0 text-small"></p>
+            <p class="text-muted mb-0 text-small"></p>
+            <p class="text-muted mb-4 text-small">电话 + 44 2556 789 8799 </p>
+            <h6>guangdong</h6>
+            <p class="text-muted mb-0 text-small"></p>
+            <p class="text-muted mb-0 text-small"></p>
+            <p class="text-muted mb-0 text-small">电话 + 44 2556 789 8799 </p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">类 别</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link text-small">布局设计</a></li>
+              <li><a href="#" class="footer-link text-small">网页设计</a></li>
+              <li><a href="#" class="footer-link text-small">支 持</a></li>
+              <li><a href="#" class="footer-link text-small">账 户</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">分享到</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="lined lined-dark mb-3">消息和更新</h5>
+            <p class="text-muted mb-4 text-small">报名每周从我们这里获得新工作和新闻
+              <form action="#">
+                <div class="input-group mb-3">
+                  <input type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" class="form-control">
+                  <div class="input-group-append">
+                    <button id="basic-addon2" type="submit" class="input-group-text"><i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark py-4">    
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0">
+              <p class="small text-gray mb-0">©2019 Best company</p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <p class="small text-gray mb-0">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="{{site.baseurl}}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{site.baseurl}}/vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="{{site.baseurl}}/vendor/leaflet/leaflet.js"></script>
+    <script src="{{site.baseurl}}/js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
